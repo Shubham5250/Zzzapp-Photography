@@ -1,12 +1,19 @@
-
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 header{
     display: flex;
     width: 100%;
+    top: 0px;
     height: 10vh;
     margin: auto;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(51, 51 ,51);
+    background-image: url(sss.jpg);
+   
 
 }
 
@@ -19,17 +26,40 @@ header{
     justify-content: flex-end;
     margin: 5px 50px;
 }
-li a {
+
+li a{
+    position: relative;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin: 5px 40px;
+    color: rgb(218, 207, 207);
+    margin: 0px 55px;
+    font-family: 'poppins';
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+li a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(249, 72, 255);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    bottom: o;
+    transition: 0.3s;
+
 }
 li a:hover{
-    color: yellow;
+    color: #fff;
+}
+li a:hover::after{
+    width: 100%;
 }
 .logo{
-    color: rgb(255, 252, 56);
+    color: rgb(255, 255, 255);
     margin: 7px 5px;
+}
+.logo a{
+    font-size: 23px;
 }
 .logo-container{
     height: 38px;
@@ -37,6 +67,157 @@ li a:hover{
     flex: 1;
 }
 .logo:hover{
-    color: white;
+    color: rgb(184, 63, 253);
     cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+#innertext{
+    text-align: center;
+}
+.btn{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(to right, #fe03b4,#ee0202);
+    font-family: cursive;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    box-shadow: 5px 5px 3px black;
+    cursor: pointer;overflow: hidden;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 18px;
+    background: #ffffff;
+    box-shadow: 0 0 10px #fff;
+    filter: blur(1px);
+    opacity: 0.9;
+    top: -30px;
+    transition: 0.6s;
+    transform: rotate(-20deg) translateX(-60px);
+}
+.btn:hover:before{
+    transform: rotate(-20deg) translate(150px,80px);
+    
+}
+#landing{
+    display: flex;
+    height: 100%;
+}
+#landingtext {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top: 100px;
+}
+  
+
+.img{
+    background: url(landing.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    margin: 0px;
+    flex: 0 1 60vw;
+  }
+#landingtext{
+   display: flex;
+   flex: 0 1 40vw;
+   height: 50vh;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding-right: 1rem;
+   padding-left: 1rem;
+   font-size: 1.5rem;
+  }
+h4{
+    font-family: cursive;
+    color: rgb(105, 105, 105);
+    margin-bottom: 95px;
+}
+h1{
+    margin-bottom: 30px;
+}
+.btnn{
+    margin: 15px;
+}
+
+#header{
+    background-color: rgb(41, 38, 38);
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 15px;
+    text-align: center;
+}
+#header h2{
+    color: white;
+    border-style: dotted;
+    border-top: none;
+    border-bottom: none;
+    font-weight: 100;
+    height: 28px;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 82px;
+    column-gap: 12px;
+    justify-items: center;
+    margin-left: 60px;
+}
+
+.items{
+    width: 500px;
+    height: 580px;
+    box-shadow: 10px 10px 5px black;
+}
+.download{
+    background-color: #006fb9;
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    margin: 35px;
+    margin-left: 192px;
+    box-shadow: 4px 4px 3px black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.download:hover{
+    color: black;
+    background-color: white;
+    transition: 0.3s ease;
+}
+.team{
+    display: flex;
+}
+.ourteam{
+    display: flex;
+    width: 70%;
+}
+.header{
+    background-color: rgb(41, 38, 38);
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 15px;
+    text-align: center;
 }
