@@ -163,10 +163,10 @@ h1{
 }
 #header h2{
     color: white;
-    border-style: dotted;
     border-top: none;
     border-bottom: none;
-    font-weight: 100;
+    font-weight: 400;
+    font-size: 35px;
     height: 28px;
     display: inline-block;
     padding-right: 10px;
@@ -227,7 +227,7 @@ h1{
 .team-mem1{
     display: flex;
     height: 270px;
-    box-shadow: 5px 5px 3px rgb(77, 75, 75);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
     border-radius: 10px;
     margin-left: 70px;
     margin-top: px;
@@ -255,11 +255,15 @@ h1{
     text-align: center;
 }
 .footer{
-    background-color: black;
+    background-repeat: no-repeat;
+    background-image: url(back1.jpg);
+    background-position: center;
+    background-size: cover;
     justify-items: center;
     bottom: 0px;
-    height: 50vh;
+    height: 100vh;
 }
+
 .ourteam a:hover{
     border: 2px solid rgb(102, 101, 101);
     border-radius: 10px;
@@ -270,7 +274,7 @@ h1{
     color: rgb(58, 15, 248);
 }
 .team{
-    background: linear-gradient(to right,#000428,#004e92);
+    background: linear-gradient(to right,#5b2eff,#f70ee3);
     height: 500px;
 }
 .contactinfo{
@@ -285,4 +289,59 @@ h1{
     color: white;
     font-weight: bold;
     font-size: 20px;
+}
+.submit{
+    display: flex;
+    height:auto;
+    color: black;
+
+}
+#submitphoto{
+    display: inline-block;
+    padding-top: 70px;
+}
+.form input{
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 30px;
+    width: 340px;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 40px;
+}
+.form{
+    position: absolute;
+    right: 40px;
+    background:transparent;
+    height: 500px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+.form a{
+    color: rgb(255, 255, 255);
+}
+.submitbt{
+    margin-left: 161px;
+    margin-top: 20px;
+}
+.form header{
+    color: white;
+    font: caption;
+    font-size: 20px;
+}
+#contact{
+    padding-top: 40px;
+}
+#contact::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    transform: translateX(50px);
+}
+.file{
+    color: white;
 }
