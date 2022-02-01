@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zzzapp Photography </title>
 </head>
+<link rel="stylesheet" media="screen and (max-width: 1007px)" href="phone.css">
 <link rel="stylesheet" href="style.css">
 <body>
     <header>
-        <div class="logo-container">
-            <img src="iccon.jpg" alt="">
-            <h4 class="logo"><a>Zzzapp Photography</a></h4>
-        </div>
-        
-        <nav>
-            <ul class="navlinks">
+        <div id="navbar">
+            <div class="logo-container">
+                <img src="iccon.jpg" alt="">
+                <h4 class="logo"><a>Zzzapp Photography</a></h4>
+            </div>
+            <!-- <ul class="navlinks"> -->
+            <ul class="navbuttons">
                 <li>
-                    <a href="#submitphoto">Submit a photo</a>
+                    <a href="#submitphoto">Submit a Photo</a>
                 </li>
                 <li>
                     <a href="#team-header">Team</a>
@@ -25,8 +26,11 @@
                 <li>
                     <a href="#contact">Contact Us</a>
                 </li>
+                <li>
+                    <a href="#copyright">&copy;</a>
+                </li>
             </ul>
-        </nav>
+        </div>
     </header>
     <main>
         <div id="landing">
@@ -94,7 +98,8 @@
             <div class="submit">
                 <div id="submitphoto">
                     <div class="form">
-                        <header>Submit your image</header>
+                        <a>Submit Your Image</a>
+                        <hr>
                         <input type="text" class="name" placeholder="enter you name"><br>
                         <input type="text" class="number" placeholder=" ex. +91 **********"><br>
                         <input type="email" class="Email" placeholder="youremail@gmail.com"><br>
@@ -108,6 +113,11 @@
                 </div>    
             </div>
         </div>
+        <footer>
+            <section id="copyright">
+            <a href="">Copyright &copy; www.zzzapp.com All Rights Reserved.</a>
+            </section>
+        </footer>
     </main>
 </body>
 </html>

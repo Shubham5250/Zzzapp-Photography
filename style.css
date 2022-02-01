@@ -3,31 +3,33 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
-    display: flex;
-    width: 100%;
-    top: 0px;
     height: 10vh;
-    margin: auto;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgb(51, 51 ,51);
-    background-image: url(sss.jpg);
-   
-
 }
-
-.logo-container, .navlinks, .logo{
+#navbar{
     display: flex;
+    align-items: center;
 }
-.navlinks{
-    justify-content: space-between;
-    list-style-type: none;
-    justify-content: flex-end;
-    margin: 5px 50px;
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 10vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
 }
-
+.logo-container, .navbuttons{
+    display: flex;
+    list-style: none;
+}
 li a{
+    padding-top: 10px;
     position: relative;
     text-decoration: none;
     color: rgb(218, 207, 207);
@@ -56,13 +58,15 @@ li a:hover::after{
 }
 .logo{
     color: rgb(255, 255, 255);
-    margin: 7px 5px;
+    padding-left: 5px;
+
 }
 .logo a{
-    font-size: 23px;
+    font-size: 25px;    
 }
 .logo-container{
-    height: 38px;
+    padding-top: 15px;
+    height: 58px;
     width: 20px;
     flex: 1;
 }
@@ -312,25 +316,35 @@ h1{
     border-radius: 40px;
 }
 .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     right: 40px;
     background:transparent;
     height: 500px;
+    border-left: 1px solid black;
+    border-top: 3px solid black;
     border-bottom: 3px solid black;
     border-right: 3px solid black;
+    border-radius: 10px;
     box-shadow: 5px 5px 5px black;
 }
 .form a{
     color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding-bottom: 9px;
 }
-.submitbt{
-    margin-left: 161px;
-    margin-top: 20px;
+.form-header{
+    width: 100%;
 }
-.form header{
+.form header a{
     color: rgb(255, 255, 255);
     font: caption;
     font-size: 20px;
+    text-decoration: none;
 }
 #contact{
     padding-top: 40px;
@@ -346,4 +360,22 @@ h1{
 }
 .file{
     color: white;
+}
+hr{
+    width: 80%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 8px;
+
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
 }
