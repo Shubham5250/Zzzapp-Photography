@@ -236,17 +236,18 @@ h1{
     z-index: 1;
     transform: scale(1.15);
     transition: 0.3s ease-in-out;
+    
 }
 .ourteam a{
     margin-left: 300px;
     text-decoration: none;
-    color: rgb(97, 92, 92);
+    color: rgb(255, 255, 255);
     border-radius: 8px;
     font-size: 20px;
     padding: 30px;
     padding-right: 50px;
     padding-left: 50px;
-    background: white;
+    background: linear-gradient(to top right,rgba(#ff0215,#f515))
     
 }
 #contact a{
@@ -272,6 +273,7 @@ h1{
     z-index: 1;
     transform: scale(1.15);
     color: rgb(58, 15, 248);
+    background: wheat;
 }
 .team{
     background: linear-gradient(to right,#5b2eff,#f70ee3);
@@ -326,7 +328,7 @@ h1{
     margin-top: 20px;
 }
 .form header{
-    color: white;
+    color: rgb(255, 255, 255);
     font: caption;
     font-size: 20px;
 }
