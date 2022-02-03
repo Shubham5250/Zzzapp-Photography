@@ -1,0 +1,59 @@
+body{
+    background-color: aqua;
+}
+/* navigation */
+header{
+    overflow: hidden;
+}
+#navbar{
+   display: flex;
+   flex-direction: row;
+
+}
+.logo-container img{
+    height: 50px;
+    border-radius: 50%;
+    height: 35px;
+}
+.logo-container{
+
+    padding-top: 0px;
+    flex: 0;
+}
+.logo {
+    display: flex;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+}
+.logo a {
+    font-size: 11px;
+}
+
+
+/* landing */
+
+
+
+/* our work */
+
+/* #images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    /* row-gap: 82px;
+    column-gap: 12px; */
+    /*justify-items: center;
+    margin-left: 20px;
+    margin-top: 2px;
+} */
+
+/* our team */
+
+
+
+/* submit form */
+
+
+
+/* footer */
