@@ -89,7 +89,8 @@ li a:hover::after{
     padding: 0.5rem 2rem;
     display: inline-block;
     box-shadow: 5px 5px 3px black;
-    cursor: pointer;overflow: hidden;
+    cursor: pointer;
+    overflow: hidden;
 }
 .btn::before{
     content: '';
@@ -111,6 +112,7 @@ li a:hover::after{
 #landing{
     display: flex;
     height: 100%;
+    justify-content: space-around;
 }
 #landingtext {
     display: flex;
@@ -123,9 +125,12 @@ li a:hover::after{
     padding-left: 1rem;
     margin-top: 100px;
 }
-  
+#landing img{
+    height:90vh;
 
-.img{
+}
+
+/* .img{
     background: url(landing.jpg);
     background-position: center;
     background-size: cover;
@@ -133,7 +138,7 @@ li a:hover::after{
     height: 90vh;
     margin: 0px;
     flex: 0 1 60vw;
-  }
+  } */
 #landingtext{
    display: flex;
    flex: 0 1 40vw;
@@ -259,9 +264,8 @@ h1{
     color: white;
     text-align: center;
 }
-.footer{
+.footer{background:url(images/back1.jpg);
     background-repeat: no-repeat;
-    background-image: url(/css/back1.jpg);
     background-position: center;
     background-size: cover;
     justify-items: center;
@@ -300,6 +304,13 @@ h1{
     display: flex;
     height:auto;
     color: black;
+    background: url(back1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-items: center;
+    bottom: 0px;
+    height: 100vh;
 
 }
 #submitphoto{
@@ -322,7 +333,7 @@ h1{
     align-items: center;
     position: absolute;
     right: 40px;
-    background:transparent;
+    
     height: 500px;
     border-left: 1px solid black;
     border-top: 3px solid black;
